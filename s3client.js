@@ -45,7 +45,7 @@ Handlebars.registerHelper('S3', function (options) {
 					reader.onload = function (e) {
 						//CANVAS
 						img.src = e.target.result
-						var canvas = document.getElementById('preload');
+						var canvas = document.createElement('canvas');
 						var ctx = canvas.getContext("2d");
 						ctx.drawImage(img, 0, 0);
 
